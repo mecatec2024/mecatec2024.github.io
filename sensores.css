@@ -1,0 +1,342 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: black ;
+    justify-content: center;
+}
+
+
+.principal{
+    background-color: #161313;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+}
+
+
+.menu ul{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.menu li{
+    list-style-type: none;
+    padding-left: 180px;
+    padding-right: 180px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+
+.menu{
+    padding: 5px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imagem1{
+    width: 350px;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.imagem2{
+    width: 350px;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+}
+
+.espaco{
+    padding-right: 30px;
+    padding-left: 30px;
+    max-height: 80%;
+}
+
+
+.geradordoresultado{
+    color: black;
+    width: 64%;
+    background-color: aqua;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.geradordoresultado button{
+    background-color: black;
+    color: white;
+    border-radius:20px ;
+    width: 120px;
+    cursor: pointer;
+}
+
+.quadrado{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    border-radius:20px;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 10px;
+    
+}
+
+
+.geradordoresultado h1{
+    padding-top: 20px;
+
+}
+
+.minhaDiv2{
+    width: 50%;
+    height: 25%;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+
+#Mudarestad button{
+
+    font-size: 12px;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#Mudarestad h1{
+    padding: 0;
+}
+
+
+#minhaDiv2 input{
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    
+}
+
+#inputtext{
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#inputtext{
+    justify-content: center;
+    width: 100%;
+    padding-left: 33%;
+}
+
+#inputtext p{
+    border-radius: 10px;
+    height: 50%;
+    width: 280px;
+    color: white;
+    background-color: black;
+    padding: 14px;
+    font-weight: bolder;
+    
+  }
+
+
+  .geradordoresultado input{
+    width: 300px;
+    height: 60%;
+    background-color: black;
+    color: white;
+    font: bold;
+    font-size: 20px;
+    margin: 0;
+    border-radius: 20px;
+    padding-left: 4%;
+}
+
+.espaco4{
+    height: 5%;
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width:758px){
+    .principal{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+
+    .imagens{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .espaco{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 8px;
+    }
+
+    .menu ul{
+        margin: 0;
+        justify-content: space-around;
+        padding: 0;
+        background-color: aqua;
+    }
+
+    .menu li{
+        padding: 2cqmax;
+        display: inline;
+        margin: 0;
+        
+
+    }
+
+    .menu a{
+        font-size: 26px;
+        border-radius: 20px;
+        color: black;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bolder;
+    }
+
+    .imagem1{
+        width: 37%;
+        height: 90%;
+
+    }
+
+    .imagem1 h1{
+        font-size: 25px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .imagem1 h2{
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        font-size: 37px;
+    }
+
+    .imagem2{
+        width: 37%;
+        height: 90%;
+    }
+
+    .imagem2 h1{
+        font-size: 25px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .imagem2 h2{
+        font-weight: 300;
+        font-size: 37px;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+
+    .menu{
+        padding: 0;
+        padding-bottom: 5%;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+
+    .geradordoresultado{
+        width: 92%;
+        height: 300px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .geradordoresultado input{
+        width: 300px;
+        height: 60%;
+        background-color: black;
+        color: white;
+        font: bold;
+        font-size: 20px;
+        margin: 0;
+        border-radius: 20px;
+        padding-left: 4%;
+    }
+
+
+    .geradordoresultado h1{
+        margin: 0;
+    }
+
+    .quadrado{
+        padding-right: 0;
+        padding-top: 10px;
+        background-color: black;
+    }
+
+    #inputtext p{
+      border-radius: 10px;
+      height: 50%;
+      width: 280px;
+      color: white;
+      background-color: black;
+      padding: 10px;
+      font-weight: bolder;
+      
+    }
+
+
+    #minhaDiv2 input{
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+
+
+}

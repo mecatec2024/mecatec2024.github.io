@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensores</title>
+    <link rel="stylesheet" href="sensores.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+const url = "https://fecitesc-bbd59-default-rtdb.firebaseio.com/dev.json";
+
+function setData(data) {
+  $("#ph").text(data.ph);
+  $("#level").text(data.level + "L");
+  $("#temperature").text(data.temperature + "°C");
+}
+
+function refresh() {
+  $.getJSON(url, (data) => {
+  	setData(data);
+  });
+}
+
+$(document).ready(() => {
+	refresh();
+  window.setInterval(refresh, 2000);
+});
+    </script>
+</head>
+<body>
+    <div class="principal">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="sensores.html">Sensores</a>
+                </li>
+                <li>
+                    <a href="creditos.html">Créditos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="imagens">
+    
+    <div class="imagem1">
+        <h1>Água captada</h1>
+        <h2 id="level">0L</h2>
+
+        <h1>Temperatura</h1>
+        <h2 id="temperature">0°C</h2>
+    </div>
+
+    <div class="espaco"></div>
+
+    <div class="imagem2">
+        <h1>PH</h1>
+        <h2 id="ph">0</h2>
+    </div>
+
+</div>
+
+</div>
+
+   
+</div>
+
+
+    
+</body>
+</html>
