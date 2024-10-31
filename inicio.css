@@ -119,6 +119,7 @@ body{
         padding-bottom: 20px;
         padding-top: 20px;
         color: aqua;
+        font-size: 30px;
 
     }
 
@@ -146,6 +147,5 @@ body{
 
     .tituloprincipal h1{
         margin: 0;
-        font-size: 30px
     }
 }
