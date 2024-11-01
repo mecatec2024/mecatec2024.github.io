@@ -10,8 +10,9 @@
 const url = "https://fecitesc-bbd59-default-rtdb.firebaseio.com/dev.json";
 
 function setData(data) {
-  $("#ph").text(data.ph);
-  $("#level").text(data.level + "L");
+  $("#other").text("Solo " + (data.soil_dry ? "molhado" : "seco") + ", última atualização em " + data.last);
+  $("#ph").text(data.ph + "pH" + (data.ph_usable ? "" : " ⚠️"));
+  $("#level").text(data.level + "L" + (data.level_minimum ? "" : " ⚠️"));
   $("#temperature").text(data.temperature + "°C");
 }
 
@@ -44,30 +45,21 @@ $(document).ready(() => {
         </div>
 
         <div class="imagens">
-    
-    <div class="imagem1">
-        <h1>Água captada</h1>
-        <h2 id="level">0L</h2>
-
-        <h1>Temperatura</h1>
-        <h2 id="temperature">0°C</h2>
+            <div class="imagem1">
+                <h1>Água captada</h1>
+                <h2 id="level">0L</h2>
+                
+                <h1>Temperatura</h1>
+                <h2 id="temperature">0°C</h2>
+            </div>
+            <div class="espaco"></div>
+            <div class="imagem2">
+                <h1>pH</h1>
+                <h2 id="ph">0</h2>
+            </div>
+            <div class="espaco"></div>
+            <h2 style="text-align: center;" id="other"></h2>
+        </div>
     </div>
-
-    <div class="espaco"></div>
-
-    <div class="imagem2">
-        <h1>PH</h1>
-        <h2 id="ph">0</h2>
-    </div>
-
-</div>
-
-</div>
-
-   
-</div>
-
-
-    
 </body>
 </html>
